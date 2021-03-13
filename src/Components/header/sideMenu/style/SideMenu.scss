@@ -1,0 +1,26 @@
+$primaryColor: #3ea1df;
+
+.sideMenu {
+  outline: 1px solid $primaryColor;
+  outline-offset: -1px;
+  transition: outline-offset 100ms;
+
+  &:hover {
+    outline-offset: -3px;
+  }
+  &__iconWrapper {
+    display: flex;
+    cursor: pointer;
+    border: 2px solid $primaryColor;
+    padding: 6px 10px;
+    align-items: center;
+  }
+  &__icon {
+    margin-right: 15px;
+    font-size: 27px;
+    color: $primaryColor;
+  }
+  &__text {
+    font-weight: bold;
+  }
+}

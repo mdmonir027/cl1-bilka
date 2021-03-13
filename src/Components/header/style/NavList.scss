@@ -1,0 +1,59 @@
+$primaryColor: #00aeef;
+.navList {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  &__item {
+    margin-right: 10px;
+    font-size: 16px;
+    &:hover {
+      text-decoration: underline;
+    }
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  &__link {
+    text-decoration: none;
+    color: #5d6b7d;
+  }
+
+  .basket {
+    &__icon {
+      background: $primaryColor;
+      padding: 12px 17px;
+      color: white;
+      position: relative;
+      text-decoration: none !important;
+      &Icon {
+        margin-right: 6px;
+        font-size: 19px;
+      }
+    }
+    &__link {
+      text-transform: capitalize;
+      font-weight: bold;
+      color: white !important;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+
+      span {
+        position: absolute;
+        top: -10px;
+        right: -12px;
+        color: white;
+        padding: 2px;
+        border-radius: 50%;
+        background: $primaryColor;
+        height: 15px;
+        width: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 2px solid white;
+        font-size: 14px;
+      }
+    }
+  }
+}

@@ -3,9 +3,9 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
 //  context api
-import DataLayer from "./Components/store/dataLayer";
-import initialState from "./Components/store/initialState";
-import reducer from "./Components/store/reducer";
+import DataLayer from "./store/dataLayer";
+import initialState from "./store/initialState";
+import reducer from "./store/reducer";
 // font awesome
 import "@fortawesome/fontawesome-free/scss/brands.scss";
 import "@fortawesome/fontawesome-free/scss/fontawesome.scss";
