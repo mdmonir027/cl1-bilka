@@ -12,6 +12,14 @@ const reducer = (state, action) => {
         ...state,
         products: action.payload.products,
       };
+    case actions.ADD_TO_CART:
+      const product = state.products.find(
+        (product) => product.id === action.payload.id
+      );
+      return {
+        ...state,
+        cart: [...state.cart, product],
+      };
     default:
       return state;
   }

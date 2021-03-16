@@ -4,10 +4,16 @@ import { subString } from "../../../utils/stringUtils";
 import { moneySeparator } from "../../../utils/mathUtils";
 
 import "./style/Product.scss";
+import { useDataLayer } from "./../../../store/dataLayer";
+import { ADD_TO_CART } from "../../../store/actions";
 
 const Product = ({ title, image, id, subTitle, price }) => {
+  const [_, dispatch] = useDataLayer();
   const addCart = () => {
-    console.log(id);
+    dispatch({
+      type: ADD_TO_CART,
+      payload: { id },
+    });
   };
   return (
     <div className="home__product">

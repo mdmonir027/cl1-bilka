@@ -1,2 +1,3 @@
 export const FETCH_CATERGORY_DATA = "FECTH_CATEGORY";
 export const FETCH_PRODUCTS_DATA = "FECTH_PRODUCTS";
+export const ADD_TO_CART = "ADD_TO_CART";
