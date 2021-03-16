@@ -1,11 +1,11 @@
-import React, { useState } from "react";
+import React from "react";
 import NavListItem from "./NavListItem";
 import shortId from "shortid";
 import BasketIcon from "./BasketIcon";
 import "./style/NavList.scss";
 
 const NavList = () => {
-  const [navlist, setNavList] = useState([
+  const navlist = [
     {
       id: shortId.generate(),
       value: "Offer Newspaper",
@@ -21,7 +21,7 @@ const NavList = () => {
       value: "Login",
       path: "/login",
     },
-  ]);
+  ];
   return (
     <ul className="navList">
       {navlist.map((item) => (

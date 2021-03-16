@@ -1,0 +1,24 @@
+$secondarColor: #1e2329;
+$primaryColor: #00aeef;
+.home {
+  &__products {
+    padding: 10px 30px;
+    .title {
+      font-size: 18px;
+      text-transform: uppercase;
+      color: #5d6b7d;
+      padding-top: 20px;
+    }
+    .subTitle {
+      font-size: 30px;
+      padding-bottom: 20px;
+      color: #1e2329 !important;
+    }
+  }
+  &__allProducts {
+    padding: 30px 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+}

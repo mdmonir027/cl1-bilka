@@ -1,0 +1,91 @@
+$secondarColor: #1e2329;
+$primaryColor: #00aeef;
+.home {
+  margin: 0 50px;
+  background: #efefef;
+
+  // catergoies sections
+  &__categories {
+    padding-top: 160px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 30px;
+
+    &Title {
+      font-size: 18px;
+      text-transform: uppercase;
+      color: #5d6b7d;
+    }
+    &SubTitle {
+      color: $secondarColor;
+      font-size: 30px;
+    }
+    &All {
+      display: inline-flex;
+      align-items: center;
+      overflow-x: scroll;
+      overflow-y: hidden;
+      width: 100%;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      &::-webkit-scrollbar {
+        display: none;
+      }
+    }
+  }
+
+  //  offerNews
+  &__offerNews {
+    background: #fff;
+    padding: 20px 60px;
+    display: flex;
+    justify-content: space-between;
+    // align-items: center;
+  }
+
+  &__offerContent {
+    padding-top: 40px;
+
+    .offerContent {
+      &__title {
+        font-size: 26px;
+        font-weight: 700;
+        color: $secondarColor;
+        margin-bottom: 20px;
+      }
+      &__subTitle {
+        color: $secondarColor;
+        font-size: 23px;
+        width: 580px;
+        margin-bottom: 13px;
+      }
+      &__link {
+        display: block;
+        text-decoration: none;
+        color: $primaryColor;
+        font-size: 27px;
+      }
+      &__button {
+        display: inline-block;
+        background: $primaryColor;
+        color: #fff;
+        text-decoration: none;
+        padding: 10px 22px;
+        font-size: 22px;
+        margin-top: 40px;
+      }
+    }
+  }
+
+  &__offerImage {
+    &Wrapper {
+      margin-top: 80px;
+      height: 350px;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+    }
+  }
+}

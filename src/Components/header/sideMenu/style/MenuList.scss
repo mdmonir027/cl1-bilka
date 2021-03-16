@@ -1,0 +1,50 @@
+$primaryColor: #3ea1df;
+.menuList {
+  list-style: none;
+  &__item {
+    font-size: 19px;
+    margin-bottom: 10px;
+
+    &:hover {
+      background: $primaryColor;
+      color: white !important;
+    }
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  &__link {
+    padding-top: 6px;
+    padding-right: 10px;
+    padding-bottom: 6px;
+    padding-left: 30px;
+    color: $primaryColor !important;
+    text-decoration: none !important;
+    display: inline-block;
+    width: -webkit-fill-available;
+    font-size: 16px;
+
+    &:hover {
+      color: white !important;
+      cursor: pointer;
+    }
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 30px;
+    align-items: center;
+  }
+  &__headerTitle {
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #1e2329;
+  }
+  &__closeIcon {
+    cursor: pointer;
+    &:hover {
+      color: $primaryColor;
+    }
+  }
+}

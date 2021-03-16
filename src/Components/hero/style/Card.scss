@@ -1,0 +1,13 @@
+.card {
+  flex: 0 0 33%;
+  overflow: hidden;
+  background: #fff;
+  margin-right: 10px;
+  box-sizing: border-box;
+  &__link {
+  }
+  &__image {
+    width: 100%;
+    object-fit: cover;
+  }
+}
