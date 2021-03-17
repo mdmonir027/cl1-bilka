@@ -1,7 +1,7 @@
 import React from "react";
 import NavListItem from "./NavListItem";
 import shortId from "shortid";
-import BasketIcon from "./BasketIcon";
+import Basket from "./basket/Basket";
 import "./style/NavList.scss";
 
 const NavList = () => {
@@ -27,7 +27,7 @@ const NavList = () => {
       {navlist.map((item) => (
         <NavListItem path={item.path} key={item.id} value={item.value} />
       ))}
-      <BasketIcon />
+      <Basket />
     </ul>
   );
 };
