@@ -1,0 +1,41 @@
+$primaryBlack: #1e2329;
+.footerList {
+  width: 270px;
+  &__title {
+    text-transform: uppercase;
+    color: $primaryBlack;
+    font-weight: bold;
+    margin-bottom: 30px;
+    font-size: 20px;
+  }
+
+  &__list {
+    list-style: none;
+  }
+
+  &__item {
+    margin-bottom: 10px;
+    font-size: 16px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+    color: $primaryBlack;
+    &:hover {
+      color: #00aeef;
+    }
+  }
+
+  &__itemFlexBox {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__itemDay {
+    text-transform: capitalize;
+  }
+}
