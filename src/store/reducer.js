@@ -14,15 +14,24 @@ const reducer = (state, action) => {
         products: action.payload.products,
       };
     case actions.ADD_TO_CART: {
-      const cart = state.cart.find(
+      const cart = [...state.cart];
+      const cartProduct = cart.find(
         (product) => product.id === action.payload.id
       );
 
-      if (cart && Object.keys(cart).length !== 0) return state;
+      if (cartProduct && Object.keys(cartProduct).length !== 0) {
+        cartProduct.quantity += 1;
+        return {
+          ...state,
+          cart,
+        };
+      }
 
       const product = state.products.find(
         (product) => product.id === action.payload.id
       );
+      product.quantity = 1;
+      product.totalPrice = product.price;
 
       return {
         ...state,
@@ -35,6 +44,13 @@ const reducer = (state, action) => {
         (product) => product.id !== action.payload.id
       );
       return { ...state, cart: newCart };
+    }
+    case actions.UPDATE_CART_PRODUCT_QUANTITY: {
+      const cart = [...state.cart];
+      const product = cart.find((product) => product.id === action.payload.id);
+      product.quantity = action.payload.quantity;
+      product.totalPrice = product.price * action.payload.quantity;
+      return { ...state, cart };
     }
     default:
       return state;

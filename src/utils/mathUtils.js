@@ -5,7 +5,8 @@ export const moneySeparator = (number) => {
 export const totalPrice = (array) => {
   let sum = 0;
   for (let i = 0; i < array.length; i++) {
-    sum = sum + array[i].price;
+    let price = array[i].price * array[i].quantity;
+    sum += price;
   }
   return moneySeparator(sum);
 };

@@ -14,7 +14,9 @@ const initialState = {
         ["id", "91504421-EA"],
         ["Item Number", "100558134"],
       ],
-      price: 3963,
+      price: 100,
+      totalPrice: 100,
+      quantity: 1,
       image:
         "https://images.pexels.com/photos/4348404/pexels-photo-4348404.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
       create: "8/23/2020",

@@ -19,9 +19,11 @@ const BasketProuducts = () => {
             key={product.id}
             image={product.image}
             price={product.price}
+            totalPrice={product.totalPrice}
             title={product.title}
             descriptions={product.descriptions}
             id={product.id}
+            quantity={product.quantity}
           />
         ))}
       </div>

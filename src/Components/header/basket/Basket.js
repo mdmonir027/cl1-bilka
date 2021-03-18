@@ -4,6 +4,7 @@ import { useDataLayer } from "../../../store/dataLayer";
 import Drawer from "@material-ui/core/Drawer";
 import BasketProuducts from "./BasketProuducts";
 import "./style/Basket.scss";
+import ArrowBackIcon from "@material-ui/icons/ArrowBack";
 
 const Basket = () => {
   const [{ cart }] = useDataLayer();
@@ -20,6 +21,10 @@ const Basket = () => {
         Basket <span>{cart.length}</span>
       </div>
       <Drawer anchor="right" open={drawer} onClose={() => setDrawer(false)}>
+        <ArrowBackIcon
+          onClick={() => setDrawer(false)}
+          className="basket__backButton"
+        />
         <BasketProuducts />
       </Drawer>
     </li>
