@@ -16,7 +16,7 @@ const reducer = (state, action) => {
     case actions.ADD_TO_CART: {
       const cart = [...state.cart];
       const cartProduct = cart.find(
-        (product) => product.id === action.payload.id
+        (product) => product.id === parseInt(action.payload.id)
       );
 
       if (cartProduct && Object.keys(cartProduct).length !== 0) {
@@ -28,9 +28,9 @@ const reducer = (state, action) => {
       }
 
       const product = state.products.find(
-        (product) => product.id === action.payload.id
+        (product) => product.id === parseInt(action.payload.id)
       );
-      product.quantity = 1;
+      product.quantity = action.payload.quantity;
       product.totalPrice = product.price;
 
       return {

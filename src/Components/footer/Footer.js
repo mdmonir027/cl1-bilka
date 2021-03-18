@@ -1,4 +1,5 @@
 import React from "react";
+import FooterCards from "./cards/FooterCards";
 import FooterList from "./FooterList";
 import "./style/Footer.scss";
 const Footer = () => {
@@ -153,12 +154,15 @@ const Footer = () => {
   };
 
   return (
-    <div className="footer">
-      <FooterList list={footerList1} />
-      <FooterList list={footerList2} />
-      <FooterList list={footerList3} />
-      <FooterList list={footerList4} />
-    </div>
+    <>
+      <FooterCards />
+      <div className="footer">
+        <FooterList list={footerList1} />
+        <FooterList list={footerList2} />
+        <FooterList list={footerList3} />
+        <FooterList list={footerList4} />
+      </div>
+    </>
   );
 };
 

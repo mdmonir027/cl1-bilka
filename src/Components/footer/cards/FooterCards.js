@@ -1,8 +1,8 @@
 import React from "react";
-import HomeCard from "./HomeCard";
+import HomeCard from "./FooterCard";
 import "./style/HomeCards.scss";
 
-const HomeCards = () => {
+const FooterCards = () => {
   const cardData = [
     {
       title: "100% DANISH-OWNED PART OF SALLING GROUP",
@@ -40,4 +40,4 @@ const HomeCards = () => {
   );
 };
 
-export default HomeCards;
+export default FooterCards;

@@ -11,6 +11,10 @@ $primaryColor: #00aeef;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  text-decoration: none;
+  a {
+    text-decoration: none !important;
+  }
   .product {
     &__image {
       width: 100%;

@@ -1,5 +1,7 @@
 export const moneySeparator = (number) => {
-  return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+  if (number > 999)
+    return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+  return number;
 };
 
 export const totalPrice = (array) => {

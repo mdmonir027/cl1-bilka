@@ -1,7 +1,7 @@
 import React from "react";
 import "./style/HomeCard.scss";
 
-const Card = ({ icon, title, body }) => {
+const FooterCard = ({ icon, title, body }) => {
   return (
     <div className="homeCard">
       <div className="homeCard__icon">
@@ -13,4 +13,4 @@ const Card = ({ icon, title, body }) => {
   );
 };
 
-export default Card;
+export default FooterCard;

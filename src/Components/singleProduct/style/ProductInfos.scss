@@ -1,0 +1,88 @@
+$primaryBlack: #1e2329;
+$secondaryBlack: #5d6b7d;
+$primaryColor: #00aeef;
+$greenColor: #16c272;
+$greenColor2: #16c272d9;
+
+.productInfos {
+  padding: 20px;
+  box-sizing: border-box;
+  &__title {
+    font-size: 30px;
+    color: $primaryBlack;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+  }
+  &__subTitle {
+    text-transform: uppercase;
+    color: $secondaryBlack;
+    margin-bottom: 5px;
+  }
+  &__descriptions {
+    font-size: 16px;
+    line-height: 1.4;
+    color: $secondaryBlack;
+    margin-bottom: 20px;
+  }
+  &__priceQuantity {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 25px;
+  }
+  &__quantityBox {
+    display: flex;
+    align-items: center;
+  }
+  &__quantity {
+    margin-right: 10px;
+  }
+  &__inputBox {
+    display: flex;
+    align-items: center;
+  }
+  &__input {
+    width: 30px;
+    padding: 8px 17px;
+    text-align: center;
+    border: none;
+    border-radius: 3px;
+    margin: 0 7px;
+    outline: none;
+    font-size: 20px;
+    &::-webkit-outer-spin-button,
+    &::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+  }
+
+  &__icon {
+    &:hover {
+      cursor: pointer;
+      color: green;
+    }
+  }
+
+  &__price {
+    font-size: 40px;
+    color: $primaryColor;
+  }
+  &__button {
+    text-align: center;
+    display: block;
+    background: $greenColor;
+    padding: 15px 0px;
+    text-transform: uppercase;
+    color: #fff;
+    letter-spacing: 2px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 2px;
+    margin-top: 20px;
+    &:hover {
+      background: $greenColor2;
+      cursor: pointer;
+    }
+  }
+}

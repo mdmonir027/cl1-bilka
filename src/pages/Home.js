@@ -5,7 +5,6 @@ import "./style/Home.scss";
 import Products from "../Components/home/product/Products";
 import OfferNews from "../Components/home/offerNews/OfferNews";
 import Categories from "../Components/home/categories/Categories";
-import HomeCards from "./../Components/home/cards/HomeCards";
 
 const Home = () => {
   return (
@@ -14,7 +13,6 @@ const Home = () => {
       <Categories />
       <OfferNews />
       <Products />
-      <HomeCards />
     </div>
   );
 };
