@@ -59,9 +59,9 @@ const ProductInfos = ({ title, subTitle, descriptions, price, id }) => {
         <p className="productInfos__price">{`$${moneySeparator(price)}`}</p>
       </div>
 
-      <buttton onClick={addToCart} className="productInfos__button">
+      <button onClick={addToCart} className="productInfos__button">
         Add To Cart
-      </buttton>
+      </button>
     </div>
   );
 };

@@ -8,8 +8,12 @@ const products = [
     descriptions:
       "Morbi vestibulum, velit id pretium iaculis, diam erat fermentum justo, nec condimentum neque sapien placerat ante.",
     specifications: [
-      ["id", "91504421-EA"],
-      ["Item Number", "100558134"],
+      { name: "id", value: "91504421-EA" },
+      { name: "Item Number", value: "100558134" },
+      { name: "Product color", value: "White" },
+      { name: "Headphones frequency", value: "20.0Hz" },
+      { name: "Battery life", value: "26 Hours" },
+      { name: "Manufacturer's Item Number", value: "20.0Hz" },
     ],
     price: 396,
     image:
@@ -25,8 +29,12 @@ const products = [
     descriptions:
       "Suspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst. Maecenas ut massa quis augue luctus tincidunt. Nulla mollis molestie lorem. Quisque ut erat. Curabitur gravida nisi at nibh. In hac habitasse platea dictumst. Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem.",
     specifications: [
-      ["id", "91504421-EA"],
-      ["Item Number", "100558134"],
+      { name: "id", value: "91504421-EA" },
+      { name: "Item Number", value: "100558134" },
+      { name: "Product color", value: "White" },
+      { name: "Headphones frequency", value: "20.0Hz" },
+      { name: "Battery life", value: "26 Hours" },
+      { name: "Manufacturer's Item Number", value: "20.0Hz" },
     ],
     price: 843,
     image:
@@ -42,8 +50,12 @@ const products = [
     descriptions:
       "Ut at dolor quis odio consequat varius. Integer ac leo. Pellentesque ultrices mattis odio.",
     specifications: [
-      ["id", "91504421-EA"],
-      ["Item Number", "100558134"],
+      { name: "id", value: "91504421-EA" },
+      { name: "Item Number", value: "100558134" },
+      { name: "Product color", value: "White" },
+      { name: "Headphones frequency", value: "20.0Hz" },
+      { name: "Battery life", value: "26 Hours" },
+      { name: "Manufacturer's Item Number", value: "20.0Hz" },
     ],
     price: 915,
     image:
@@ -59,8 +71,12 @@ const products = [
     descriptions:
       "Donec quis orci eget orci vehicula condimentum. Curabitur in libero ut massa volutpat convallis. Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo. Maecenas pulvinar lobortis est. Phasellus sit amet erat. Nulla tempus.",
     specifications: [
-      ["id", "91504421-EA"],
-      ["Item Number", "100558134"],
+      { name: "id", value: "91504421-EA" },
+      { name: "Item Number", value: "100558134" },
+      { name: "Product color", value: "White" },
+      { name: "Headphones frequency", value: "20.0Hz" },
+      { name: "Battery life", value: "26 Hours" },
+      { name: "Manufacturer's Item Number", value: "20.0Hz" },
     ],
     price: 186,
     image:
@@ -76,8 +92,12 @@ const products = [
     descriptions:
       "Suspendisse potenti. Cras in purus eu magna vulputate luctus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
     specifications: [
-      ["id", "91504421-EA"],
-      ["Item Number", "100558134"],
+      { name: "id", value: "91504421-EA" },
+      { name: "Item Number", value: "100558134" },
+      { name: "Product color", value: "White" },
+      { name: "Headphones frequency", value: "20.0Hz" },
+      { name: "Battery life", value: "26 Hours" },
+      { name: "Manufacturer's Item Number", value: "20.0Hz" },
     ],
     price: 287,
     image:
@@ -92,8 +112,12 @@ const products = [
     descriptions:
       "Duis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa. Donec dapibus. Duis at velit eu est congue elementum. In hac habitasse platea dictumst. Morbi vestibulum, velit id pretium iaculis, diam erat fermentum justo, nec condimentum neque sapien placerat ante. Nulla justo. Aliquam quis turpis eget elit sodales scelerisque. Mauris sit amet eros. Suspendisse accumsan tortor quis turpis. Sed ante.",
     specifications: [
-      ["id", "91504421-EA"],
-      ["Item Number", "100558134"],
+      { name: "id", value: "91504421-EA" },
+      { name: "Item Number", value: "100558134" },
+      { name: "Product color", value: "White" },
+      { name: "Headphones frequency", value: "20.0Hz" },
+      { name: "Battery life", value: "26 Hours" },
+      { name: "Manufacturer's Item Number", value: "20.0Hz" },
     ],
     price: 687,
     image: "http://dummyimage.com/198x115.jpg/cc0000/ffffff",
@@ -108,8 +132,12 @@ const products = [
     descriptions:
       "Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus.",
     specifications: [
-      ["id", "91504421-EA"],
-      ["Item Number", "100558134"],
+      { name: "id", value: "91504421-EA" },
+      { name: "Item Number", value: "100558134" },
+      { name: "Product color", value: "White" },
+      { name: "Headphones frequency", value: "20.0Hz" },
+      { name: "Battery life", value: "26 Hours" },
+      { name: "Manufacturer's Item Number", value: "20.0Hz" },
     ],
     price: 55,
     image: "http://dummyimage.com/156x108.jpg/5fa2dd/ffffff",
@@ -124,8 +152,12 @@ const products = [
     descriptions:
       "Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus. Pellentesque at nulla.",
     specifications: [
-      ["id", "91504421-EA"],
-      ["Item Number", "100558134"],
+      { name: "id", value: "91504421-EA" },
+      { name: "Item Number", value: "100558134" },
+      { name: "Product color", value: "White" },
+      { name: "Headphones frequency", value: "20.0Hz" },
+      { name: "Battery life", value: "26 Hours" },
+      { name: "Manufacturer's Item Number", value: "20.0Hz" },
     ],
     price: 169,
     image: "http://dummyimage.com/177x228.jpg/5fa2dd/ffffff",
@@ -140,8 +172,12 @@ const products = [
     descriptions:
       "Sed ante. Vivamus tortor. Duis mattis egestas metus. Aenean fermentum.",
     specifications: [
-      ["id", "91504421-EA"],
-      ["Item Number", "100558134"],
+      { name: "id", value: "91504421-EA" },
+      { name: "Item Number", value: "100558134" },
+      { name: "Product color", value: "White" },
+      { name: "Headphones frequency", value: "20.0Hz" },
+      { name: "Battery life", value: "26 Hours" },
+      { name: "Manufacturer's Item Number", value: "20.0Hz" },
     ],
     price: 574,
     image: "http://dummyimage.com/226x208.png/ff4444/ffffff",
@@ -155,8 +191,12 @@ const products = [
     descriptions:
       "Vestibulum sed magna at nunc commodo placerat. Praesent blandit. Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede. Morbi porttitor lorem id ligula. Suspendisse ornare consequat lectus.",
     specifications: [
-      ["id", "91504421-EA"],
-      ["Item Number", "100558134"],
+      { name: "id", value: "91504421-EA" },
+      { name: "Item Number", value: "100558134" },
+      { name: "Product color", value: "White" },
+      { name: "Headphones frequency", value: "20.0Hz" },
+      { name: "Battery life", value: "26 Hours" },
+      { name: "Manufacturer's Item Number", value: "20.0Hz" },
     ],
     price: 638,
     image: "http://dummyimage.com/240x159.png/dddddd/000000",
@@ -171,8 +211,12 @@ const products = [
     descriptions:
       "Etiam faucibus cursus urna. Ut tellus. Nulla ut erat id mauris vulputate elementum.",
     specifications: [
-      ["id", "91504421-EA"],
-      ["Item Number", "100558134"],
+      { name: "id", value: "91504421-EA" },
+      { name: "Item Number", value: "100558134" },
+      { name: "Product color", value: "White" },
+      { name: "Headphones frequency", value: "20.0Hz" },
+      { name: "Battery life", value: "26 Hours" },
+      { name: "Manufacturer's Item Number", value: "20.0Hz" },
     ],
     price: 492,
     image: "http://dummyimage.com/232x174.jpg/5fa2dd/ffffff",
@@ -187,8 +231,12 @@ const products = [
     descriptions:
       "Donec posuere metus vitae ipsum. Aliquam non mauris. Morbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis.",
     specifications: [
-      ["id", "91504421-EA"],
-      ["Item Number", "100558134"],
+      { name: "id", value: "91504421-EA" },
+      { name: "Item Number", value: "100558134" },
+      { name: "Product color", value: "White" },
+      { name: "Headphones frequency", value: "20.0Hz" },
+      { name: "Battery life", value: "26 Hours" },
+      { name: "Manufacturer's Item Number", value: "20.0Hz" },
     ],
     price: 705,
     image: "http://dummyimage.com/145x100.png/5fa2dd/ffffff",
@@ -202,8 +250,12 @@ const products = [
     subTitle: "Sales",
     descriptions: "Nulla ut erat id mauris vulputate elementum.",
     specifications: [
-      ["id", "91504421-EA"],
-      ["Item Number", "100558134"],
+      { name: "id", value: "91504421-EA" },
+      { name: "Item Number", value: "100558134" },
+      { name: "Product color", value: "White" },
+      { name: "Headphones frequency", value: "20.0Hz" },
+      { name: "Battery life", value: "26 Hours" },
+      { name: "Manufacturer's Item Number", value: "20.0Hz" },
     ],
     price: 292,
     image: "http://dummyimage.com/250x110.jpg/5fa2dd/ffffff",
@@ -218,8 +270,12 @@ const products = [
     descriptions:
       "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin risus.",
     specifications: [
-      ["id", "91504421-EA"],
-      ["Item Number", "100558134"],
+      { name: "id", value: "91504421-EA" },
+      { name: "Item Number", value: "100558134" },
+      { name: "Product color", value: "White" },
+      { name: "Headphones frequency", value: "20.0Hz" },
+      { name: "Battery life", value: "26 Hours" },
+      { name: "Manufacturer's Item Number", value: "20.0Hz" },
     ],
     price: 705,
     image: "http://dummyimage.com/107x229.png/dddddd/000000",
@@ -233,8 +289,12 @@ const products = [
     descriptions:
       "Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros. Vestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat.",
     specifications: [
-      ["id", "91504421-EA"],
-      ["Item Number", "100558134"],
+      { name: "id", value: "91504421-EA" },
+      { name: "Item Number", value: "100558134" },
+      { name: "Product color", value: "White" },
+      { name: "Headphones frequency", value: "20.0Hz" },
+      { name: "Battery life", value: "26 Hours" },
+      { name: "Manufacturer's Item Number", value: "20.0Hz" },
     ],
     price: 37,
     image: "http://dummyimage.com/150x217.jpg/5fa2dd/ffffff",
@@ -249,8 +309,12 @@ const products = [
     descriptions:
       "Duis consequat dui nec nisi volutpat eleifend. Donec ut dolor. Morbi vel lectus in quam fringilla rhoncus. Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis.",
     specifications: [
-      ["id", "91504421-EA"],
-      ["Item Number", "100558134"],
+      { name: "id", value: "91504421-EA" },
+      { name: "Item Number", value: "100558134" },
+      { name: "Product color", value: "White" },
+      { name: "Headphones frequency", value: "20.0Hz" },
+      { name: "Battery life", value: "26 Hours" },
+      { name: "Manufacturer's Item Number", value: "20.0Hz" },
     ],
     price: 21,
     image: "http://dummyimage.com/104x102.png/5fa2dd/ffffff",
@@ -265,8 +329,12 @@ const products = [
     descriptions:
       "In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl.",
     specifications: [
-      ["id", "91504421-EA"],
-      ["Item Number", "100558134"],
+      { name: "id", value: "91504421-EA" },
+      { name: "Item Number", value: "100558134" },
+      { name: "Product color", value: "White" },
+      { name: "Headphones frequency", value: "20.0Hz" },
+      { name: "Battery life", value: "26 Hours" },
+      { name: "Manufacturer's Item Number", value: "20.0Hz" },
     ],
     price: 988,
     image: "http://dummyimage.com/131x188.png/ff4444/ffffff",
@@ -280,8 +348,12 @@ const products = [
     subTitle: "Accounting",
     descriptions: "Duis bibendum.",
     specifications: [
-      ["id", "91504421-EA"],
-      ["Item Number", "100558134"],
+      { name: "id", value: "91504421-EA" },
+      { name: "Item Number", value: "100558134" },
+      { name: "Product color", value: "White" },
+      { name: "Headphones frequency", value: "20.0Hz" },
+      { name: "Battery life", value: "26 Hours" },
+      { name: "Manufacturer's Item Number", value: "20.0Hz" },
     ],
     price: 455,
     image: "http://dummyimage.com/180x233.jpg/ff4444/ffffff",
@@ -295,8 +367,12 @@ const products = [
     descriptions:
       "Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque. Duis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus. In sagittis dui vel nisl. Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus.",
     specifications: [
-      ["id", "91504421-EA"],
-      ["Item Number", "100558134"],
+      { name: "id", value: "91504421-EA" },
+      { name: "Item Number", value: "100558134" },
+      { name: "Product color", value: "White" },
+      { name: "Headphones frequency", value: "20.0Hz" },
+      { name: "Battery life", value: "26 Hours" },
+      { name: "Manufacturer's Item Number", value: "20.0Hz" },
     ],
     price: 304,
     image: "http://dummyimage.com/140x162.jpg/dddddd/000000",
@@ -311,8 +387,12 @@ const products = [
     descriptions:
       "Praesent blandit lacinia erat. Vestibulum sed magna at nunc commodo placerat. Praesent blandit. Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede. Morbi porttitor lorem id ligula. Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem. Fusce consequat.",
     specifications: [
-      ["id", "91504421-EA"],
-      ["Item Number", "100558134"],
+      { name: "id", value: "91504421-EA" },
+      { name: "Item Number", value: "100558134" },
+      { name: "Product color", value: "White" },
+      { name: "Headphones frequency", value: "20.0Hz" },
+      { name: "Battery life", value: "26 Hours" },
+      { name: "Manufacturer's Item Number", value: "20.0Hz" },
     ],
     price: 374,
     image: "http://dummyimage.com/184x164.jpg/dddddd/000000",
@@ -326,8 +406,12 @@ const products = [
     descriptions:
       "Fusce consequat. Nulla nisl. Nunc nisl. Duis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa. Donec dapibus. Duis at velit eu est congue elementum. In hac habitasse platea dictumst. Morbi vestibulum, velit id pretium iaculis, diam erat fermentum justo, nec condimentum neque sapien placerat ante. Nulla justo. Aliquam quis turpis eget elit sodales scelerisque.",
     specifications: [
-      ["id", "91504421-EA"],
-      ["Item Number", "100558134"],
+      { name: "id", value: "91504421-EA" },
+      { name: "Item Number", value: "100558134" },
+      { name: "Product color", value: "White" },
+      { name: "Headphones frequency", value: "20.0Hz" },
+      { name: "Battery life", value: "26 Hours" },
+      { name: "Manufacturer's Item Number", value: "20.0Hz" },
     ],
     price: 784,
     image: "http://dummyimage.com/240x191.jpg/dddddd/000000",
@@ -342,8 +426,12 @@ const products = [
     descriptions:
       "Quisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus. Phasellus in felis. Donec semper sapien a libero. Nam dui. Proin leo odio, porttitor id, consequat in, consequat ut, nulla. Sed accumsan felis. Ut at dolor quis odio consequat varius.",
     specifications: [
-      ["id", "91504421-EA"],
-      ["Item Number", "100558134"],
+      { name: "id", value: "91504421-EA" },
+      { name: "Item Number", value: "100558134" },
+      { name: "Product color", value: "White" },
+      { name: "Headphones frequency", value: "20.0Hz" },
+      { name: "Battery life", value: "26 Hours" },
+      { name: "Manufacturer's Item Number", value: "20.0Hz" },
     ],
     price: 790,
     image: "http://dummyimage.com/126x235.bmp/dddddd/000000",
@@ -357,8 +445,12 @@ const products = [
     descriptions:
       "Fusce consequat. Nulla nisl. Nunc nisl. Duis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa. Donec dapibus.",
     specifications: [
-      ["id", "91504421-EA"],
-      ["Item Number", "100558134"],
+      { name: "id", value: "91504421-EA" },
+      { name: "Item Number", value: "100558134" },
+      { name: "Product color", value: "White" },
+      { name: "Headphones frequency", value: "20.0Hz" },
+      { name: "Battery life", value: "26 Hours" },
+      { name: "Manufacturer's Item Number", value: "20.0Hz" },
     ],
     price: 318,
     image: "http://dummyimage.com/230x169.png/cc0000/ffffff",
@@ -372,8 +464,12 @@ const products = [
     descriptions:
       "Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis. Fusce posuere felis sed lacus.",
     specifications: [
-      ["id", "91504421-EA"],
-      ["Item Number", "100558134"],
+      { name: "id", value: "91504421-EA" },
+      { name: "Item Number", value: "100558134" },
+      { name: "Product color", value: "White" },
+      { name: "Headphones frequency", value: "20.0Hz" },
+      { name: "Battery life", value: "26 Hours" },
+      { name: "Manufacturer's Item Number", value: "20.0Hz" },
     ],
     price: 525,
     image: "http://dummyimage.com/153x165.bmp/cc0000/ffffff",
@@ -388,8 +484,12 @@ const products = [
     descriptions:
       "Integer a nibh. In quis justo. Maecenas rhoncus aliquam lacus. Morbi quis tortor id nulla ultrices aliquet. Maecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui. Maecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc.",
     specifications: [
-      ["id", "91504421-EA"],
-      ["Item Number", "100558134"],
+      { name: "id", value: "91504421-EA" },
+      { name: "Item Number", value: "100558134" },
+      { name: "Product color", value: "White" },
+      { name: "Headphones frequency", value: "20.0Hz" },
+      { name: "Battery life", value: "26 Hours" },
+      { name: "Manufacturer's Item Number", value: "20.0Hz" },
     ],
     price: 259,
     image: "http://dummyimage.com/226x191.bmp/cc0000/ffffff",
@@ -404,8 +504,12 @@ const products = [
     descriptions:
       "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem.",
     specifications: [
-      ["id", "91504421-EA"],
-      ["Item Number", "100558134"],
+      { name: "id", value: "91504421-EA" },
+      { name: "Item Number", value: "100558134" },
+      { name: "Product color", value: "White" },
+      { name: "Headphones frequency", value: "20.0Hz" },
+      { name: "Battery life", value: "26 Hours" },
+      { name: "Manufacturer's Item Number", value: "20.0Hz" },
     ],
     price: 12,
     image: "http://dummyimage.com/148x128.jpg/cc0000/ffffff",
@@ -420,8 +524,12 @@ const products = [
     descriptions:
       "In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl. Aenean lectus. Pellentesque eget nunc. Donec quis orci eget orci vehicula condimentum. Curabitur in libero ut massa volutpat convallis. Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo.",
     specifications: [
-      ["id", "91504421-EA"],
-      ["Item Number", "100558134"],
+      { name: "id", value: "91504421-EA" },
+      { name: "Item Number", value: "100558134" },
+      { name: "Product color", value: "White" },
+      { name: "Headphones frequency", value: "20.0Hz" },
+      { name: "Battery life", value: "26 Hours" },
+      { name: "Manufacturer's Item Number", value: "20.0Hz" },
     ],
     price: 135,
     image: "http://dummyimage.com/137x206.bmp/ff4444/ffffff",
@@ -436,8 +544,12 @@ const products = [
     descriptions:
       "Pellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus.",
     specifications: [
-      ["id", "91504421-EA"],
-      ["Item Number", "100558134"],
+      { name: "id", value: "91504421-EA" },
+      { name: "Item Number", value: "100558134" },
+      { name: "Product color", value: "White" },
+      { name: "Headphones frequency", value: "20.0Hz" },
+      { name: "Battery life", value: "26 Hours" },
+      { name: "Manufacturer's Item Number", value: "20.0Hz" },
     ],
     price: 86,
     image: "http://dummyimage.com/215x144.jpg/ff4444/ffffff",
@@ -452,8 +564,12 @@ const products = [
     descriptions:
       "Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl. Aenean lectus.",
     specifications: [
-      ["id", "91504421-EA"],
-      ["Item Number", "100558134"],
+      { name: "id", value: "91504421-EA" },
+      { name: "Item Number", value: "100558134" },
+      { name: "Product color", value: "White" },
+      { name: "Headphones frequency", value: "20.0Hz" },
+      { name: "Battery life", value: "26 Hours" },
+      { name: "Manufacturer's Item Number", value: "20.0Hz" },
     ],
     price: 427,
     image: "http://dummyimage.com/160x212.jpg/ff4444/ffffff",
@@ -468,8 +584,12 @@ const products = [
     descriptions:
       "Nullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh. In quis justo. Maecenas rhoncus aliquam lacus. Morbi quis tortor id nulla ultrices aliquet. Maecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui.",
     specifications: [
-      ["id", "91504421-EA"],
-      ["Item Number", "100558134"],
+      { name: "id", value: "91504421-EA" },
+      { name: "Item Number", value: "100558134" },
+      { name: "Product color", value: "White" },
+      { name: "Headphones frequency", value: "20.0Hz" },
+      { name: "Battery life", value: "26 Hours" },
+      { name: "Manufacturer's Item Number", value: "20.0Hz" },
     ],
     price: 669,
     image: "http://dummyimage.com/248x131.png/cc0000/ffffff",

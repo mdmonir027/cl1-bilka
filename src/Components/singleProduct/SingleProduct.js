@@ -5,6 +5,7 @@ import "./style/SingleProduct.scss";
 import CircularProgress from "@material-ui/core/CircularProgress";
 import ProductImage from "./ProductImage";
 import ProductInfos from "./ProductInfos";
+import Specification from "./Specification";
 
 const SingleProduct = () => {
   const { id } = useParams();
@@ -29,6 +30,16 @@ const SingleProduct = () => {
           price={product?.price}
           id={id}
         />
+      </div>
+      <div className="singleProduct__infos">
+        <div className="singleProduct__descriptions">
+          <h2 className="singleProduct__title">Descriptions</h2>
+          <p>{product?.descriptions}</p>
+        </div>
+
+        {product?.specifications && (
+          <Specification specifications={product.specifications} />
+        )}
       </div>
     </div>
   );

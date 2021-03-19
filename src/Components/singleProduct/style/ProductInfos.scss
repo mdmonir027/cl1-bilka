@@ -80,6 +80,9 @@ $greenColor2: #16c272d9;
     font-weight: bold;
     border-radius: 2px;
     margin-top: 20px;
+    width: 100%;
+    border: none;
+    outline: none;
     &:hover {
       background: $greenColor2;
       cursor: pointer;
