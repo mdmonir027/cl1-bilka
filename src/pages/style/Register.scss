@@ -1,0 +1,25 @@
+.register {
+  width: 500px;
+  margin: auto;
+  border: 1px solid #f1f1f1;
+  padding: 10px 30px;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 20px;
+
+  & > h2 {
+    font-size: 34px;
+    text-align: center;
+    color: #1e2329;
+    margin-top: 10px;
+  }
+  a {
+    color: #00aeef;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

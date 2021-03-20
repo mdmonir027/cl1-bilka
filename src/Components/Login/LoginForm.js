@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import "./style/LoginForm.scss";
 
 const LoginForm = () => {
   const [email, setEmail] = useState("");
@@ -83,7 +82,7 @@ const LoginForm = () => {
       <button onClick={submitHandler} type="submit" className="form__submitBtn">
         Log In
       </button>
-      <br />
+
       <br />
       <Link to="/register">Don't Have an account? Register Here</Link>
     </form>

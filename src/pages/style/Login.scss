@@ -1,17 +1,25 @@
 .login {
   width: 500px;
   margin: auto;
-  padding: 20px 40px;
-  box-sizing: border-box;
-  background: #00aeef;
-  margin-top: 40px;
+  border: 1px solid #f1f1f1;
+  padding: 10px 30px;
   border-radius: 4px;
-  &__title {
+  box-sizing: border-box;
+  margin-top: 20px;
+
+  & > h2 {
+    font-size: 34px;
     text-align: center;
-    font-size: 30px;
+    color: #1e2329;
     margin-top: 10px;
-    margin-bottom: 20px;
-    text-transform: uppercase;
-    color: #fff;
+  }
+  a {
+    color: #00aeef;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    &:hover {
+      text-decoration: underline;
+    }
   }
 }
