@@ -1,0 +1,17 @@
+.login {
+  width: 500px;
+  margin: auto;
+  padding: 20px 40px;
+  box-sizing: border-box;
+  background: #00aeef;
+  margin-top: 40px;
+  border-radius: 4px;
+  &__title {
+    text-align: center;
+    font-size: 30px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    color: #fff;
+  }
+}

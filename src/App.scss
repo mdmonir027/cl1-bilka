@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+$chekboxWidth: 14px;
+@mixin form {
+  display: block;
+  width: 100%;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+}
+
+.form {
+  &__group {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  &__label {
+    @include form();
+    margin-bottom: 5px;
+    margin-left: 3px;
+    font-size: 23px;
+    color: #fff;
+    font-weight: 500;
+  }
+
+  &__control {
+    @include form();
+    box-sizing: border-box;
+    padding: 11px 10px;
+    color: #1e2329;
+    background: white;
+    font-size: 19px;
+    border: 2px solid #ced4da !important;
+  }
+
+  &__submitBtn {
+    @include form();
+    background: #fff;
+    color: #1e2329;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    font-size: 22px;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  &__passwordShow {
+    @include form();
+    margin-top: 10px;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+
+    & > label {
+      color: #1e2329;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+    & > input {
+      margin-right: 5px;
+
+      @include form();
+
+      display: inline-block !important;
+      width: $chekboxWidth;
+      height: $chekboxWidth;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.is-invalid {
+  border-color: #dc3545 !important;
+  padding-right: calc(1.5em + 0.75rem);
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='none' stroke='%23dc3545' viewBox='0 0 12 12'%3e%3ccircle cx='6' cy='6' r='4.5'/%3e%3cpath stroke-linejoin='round' d='M5.8 3.6h.4L6 6.5z'/%3e%3ccircle cx='6' cy='8.2' r='.6' fill='%23dc3545' stroke='none'/%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right calc(0.375em + 0.1875rem) center;
+
+  background-size: calc(0.75em + 0.375rem) calc(0.75em + 0.375rem);
+  & + .invalid-feedback {
+    color: white;
+  }
+}
+
+.noselect {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}

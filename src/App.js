@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import "./App.css";
+import "./App.scss";
 import { Route, BrowserRouter as Router, Switch } from "react-router-dom";
 import Header from "./Components/header/Header";
 import Home from "./pages/Home";
@@ -9,6 +9,8 @@ import products from "./fakeData/products";
 import { FETCH_PRODUCTS_DATA } from "./store/actions";
 import { useDataLayer } from "./store/dataLayer";
 import AllProducts from "./pages/AllProducts";
+import Login from "./pages/Login";
+import Register from "./pages/Register";
 
 const App = () => {
   const [_, dispatch] = useDataLayer();
@@ -28,10 +30,16 @@ const App = () => {
           <Route path="/" exact component={Home} />
         </Switch>
         <Switch>
-          <Route path="/product/:id" exact component={SingleProduct} />
+          <Route path="/product/:id" component={SingleProduct} />
         </Switch>
         <Switch>
           <Route path="/products" exact component={AllProducts} />
+        </Switch>
+        <Switch>
+          <Route path="/login" component={Login} />
+        </Switch>
+        <Switch>
+          <Route path="/register" component={Register} />
         </Switch>
         <Footer />
       </Router>
