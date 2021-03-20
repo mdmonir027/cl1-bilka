@@ -8,6 +8,7 @@ import SingleProduct from "./Components/singleProduct/SingleProduct";
 import products from "./fakeData/products";
 import { FETCH_PRODUCTS_DATA } from "./store/actions";
 import { useDataLayer } from "./store/dataLayer";
+import AllProducts from "./pages/AllProducts";
 
 const App = () => {
   const [_, dispatch] = useDataLayer();
@@ -28,6 +29,9 @@ const App = () => {
         </Switch>
         <Switch>
           <Route path="/product/:id" exact component={SingleProduct} />
+        </Switch>
+        <Switch>
+          <Route path="/products" exact component={AllProducts} />
         </Switch>
         <Footer />
       </Router>

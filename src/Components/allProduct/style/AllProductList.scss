@@ -1,0 +1,11 @@
+.allProducts__products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background: #f3f3f3;
+  padding-bottom: 25px;
+  & > div {
+    margin-right: 20px;
+    margin-bottom: 20px;
+  }
+}

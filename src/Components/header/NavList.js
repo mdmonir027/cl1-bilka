@@ -13,8 +13,8 @@ const NavList = () => {
     },
     {
       id: shortId.generate(),
-      value: "Find Bilka",
-      path: "/find-bilka",
+      value: "Products",
+      path: "/products",
     },
     {
       id: shortId.generate(),

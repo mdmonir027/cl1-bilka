@@ -1,0 +1,41 @@
+.allProducts {
+  &__paginations {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+    background: #fff;
+  }
+  &__paginationsList {
+    display: flex;
+    list-style: none;
+    align-items: center;
+  }
+
+  &__paginationsItem {
+    margin-right: 10px;
+    background: #00aeef;
+    color: white;
+    padding: 15px 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    height: 30px;
+    outline: none;
+    border: none;
+    &:hover {
+      cursor: pointer;
+      background: #00aeefc9;
+    }
+    &:disabled {
+      background: #00aeef63;
+      cursor: not-allowed;
+    }
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  &__paginationsItem.active {
+    background: #16c272;
+  }
+}
