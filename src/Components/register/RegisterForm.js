@@ -7,7 +7,6 @@ const RegisterForm = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
-
   const [errors, setErrors] = useState({});
 
   const submitHandler = (event) => {
@@ -16,6 +15,10 @@ const RegisterForm = () => {
     const validate = validation();
     if (validate.isValid) {
       setErrors({});
+      setName("");
+      setEmail("");
+      setPassword("");
+      setConfirmPassword("");
       console.log({ name, email, password, confirmPassword });
     } else {
       setErrors(validate.errors);

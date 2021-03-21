@@ -52,6 +52,19 @@ const reducer = (state, action) => {
       product.totalPrice = product.price * action.payload.quantity;
       return { ...state, cart };
     }
+    case actions.SET_USER: {
+      const user = action.payload.user;
+
+      const auth = {
+        user,
+        isLoggedIn: Object.keys(user).length !== 0,
+      };
+
+      return {
+        ...state,
+        auth,
+      };
+    }
     default:
       return state;
   }

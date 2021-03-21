@@ -1,5 +1,7 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
+import { SET_USER } from "../../store/actions";
+import { useDataLayer } from "./../../store/dataLayer";
 
 const LoginForm = () => {
   const [email, setEmail] = useState("");
@@ -7,13 +9,34 @@ const LoginForm = () => {
   const [passwordShow, setPasswordShow] = useState(false);
   const [errors, setErrors] = useState({});
 
+  const history = useHistory();
+
+  const [_, dispatch] = useDataLayer();
+
   const submitHandler = (event) => {
     event.preventDefault();
 
     const validate = validation();
     if (validate.isValid) {
       setErrors({});
-      console.log({ email, password });
+      const userEmail = process.env.REACT_APP_USER;
+      const userPassword = process.env.REACT_APP_PASS;
+
+      if (email === userEmail && password === userPassword) {
+        dispatch({
+          type: SET_USER,
+          payload: {
+            user: { email, password },
+          },
+        });
+
+        history.push("/");
+      } else {
+        setErrors({
+          email: "Email Or Password was incorrect!",
+          password: "Email Or Password was incorrect!",
+        });
+      }
     } else {
       setErrors(validate.errors);
     }
@@ -49,7 +72,9 @@ const LoginForm = () => {
           value={email}
           onChange={(e) => setEmail(e.target.value)}
         />
-        {errors?.email && <div class="invalid-feedback">{errors?.email}</div>}
+        {errors?.email && (
+          <div className="invalid-feedback">{errors?.email}</div>
+        )}
       </div>
       <div className="form__group">
         <label htmlFor="password" className="form__label text__white--imp">
@@ -64,7 +89,7 @@ const LoginForm = () => {
           onChange={(e) => setPassword(e.target.value)}
         />
         {errors?.password && (
-          <div class="invalid-feedback">{errors?.password}</div>
+          <div className="invalid-feedback">{errors?.password}</div>
         )}
         <div className="form__passwordShow">
           <input
