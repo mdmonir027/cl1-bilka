@@ -41,7 +41,7 @@ const App = () => {
           <Route path="/admin/dashboard" exact component={Dashboard} />
         </Switch>
         <Switch>
-          <Route path="/admin/product-order" exact component={OrderedProduct} />
+          <Route path="/admin/ordered-items" exact component={OrderedProduct} />
         </Switch>
         <Switch>
           <Route path="/login" component={Login} />
