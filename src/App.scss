@@ -4,6 +4,7 @@
 }
 
 $chekboxWidth: 14px;
+$avatarWidth: 30px;
 @mixin form {
   display: block;
   width: 100%;
@@ -100,4 +101,9 @@ $chekboxWidth: 14px;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+}
+
+.avatar {
+  width: $avatarWidth !important;
+  height: $avatarWidth !important;
 }

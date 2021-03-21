@@ -30,7 +30,7 @@ const LoginForm = () => {
           },
         });
 
-        history.push("/");
+        history.push("/admin/dashboard");
       } else {
         setErrors({
           email: "Email Or Password was incorrect!",

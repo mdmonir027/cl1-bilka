@@ -11,6 +11,8 @@ import { useDataLayer } from "./store/dataLayer";
 import AllProducts from "./pages/AllProducts";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
+import Dashboard from "./pages/dashboard/Dashboard";
+import OrderedProduct from "./pages/dashboard/OrderedProduct";
 
 const App = () => {
   const [_, dispatch] = useDataLayer();
@@ -34,6 +36,12 @@ const App = () => {
         </Switch>
         <Switch>
           <Route path="/products" exact component={AllProducts} />
+        </Switch>
+        <Switch>
+          <Route path="/admin/dashboard" exact component={Dashboard} />
+        </Switch>
+        <Switch>
+          <Route path="/admin/product-order" exact component={OrderedProduct} />
         </Switch>
         <Switch>
           <Route path="/login" component={Login} />
