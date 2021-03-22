@@ -1,0 +1,132 @@
+@mixin flexMixin {
+  box-sizing: border-box;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+.checkout {
+  background: #f2f2f2;
+  padding: 20px 0 50px 0;
+  box-sizing: border-box;
+  &__wrapper {
+    display: flex;
+    margin: 0px 50px;
+    margin-top: 20px;
+  }
+  &__form {
+    flex: 0 0 50%;
+    @include flexMixin();
+  }
+
+  &__products {
+    flex: 0 0 50%;
+    @include flexMixin();
+  }
+
+  &__productImage {
+    width: 80px;
+    margin: auto;
+    img {
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__orderSummary {
+    margin-top: 20px;
+    background: #fff;
+    box-sizing: border-box;
+    padding: 15px 20px;
+    width: 100%;
+    box-shadow: 0 0 9px 1px #d0d0d0;
+
+    .summary {
+      &__title {
+        margin-bottom: 10px;
+        font-size: 30px;
+        color: #000000d6;
+      }
+      &__item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        span {
+          display: inline-block;
+          font-size: 18px;
+          font-weight: 500;
+          color: #1e2329;
+          margin: 2px 0;
+        }
+      }
+    }
+  }
+
+  .coupon {
+    &__inputBox {
+      display: flex;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid #a9a9a973;
+      border-top: 1px solid #a9a9a973;
+    }
+    &__input {
+      flex: 1;
+      outline: none;
+      border: 1px solid #a9a9a973;
+      border-radius: 3px 0 0 3px;
+      padding: 10px 15px;
+    }
+
+    &__applyBtn {
+      padding: 10px 15px;
+      border: 1px solid #a9a9a973;
+      outline: none;
+      background: white;
+      border-radius: 0 3px 3px 0;
+      &:hover {
+        cursor: pointer;
+        background: #f2f2f2;
+      }
+    }
+  }
+
+  &__btn {
+    display: block;
+    width: 100%;
+    border: 1px solid #a9a9a973;
+    padding: 14px 20px;
+    outline: none;
+    color: #1e2329;
+    margin-top: 15px;
+    background: white;
+    transition: box-shadow 200ms;
+    &:hover {
+      cursor: pointer;
+      box-shadow: 0 0 9px 1px #d0d0d0;
+    }
+  }
+
+  &__modal {
+    position: absolute;
+    width: 400px;
+    background-color: #fff;
+    box-shadow: 0 0 5px 1px #a9a9a973;
+    padding: 20px;
+    outline: none;
+    border: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    h2 {
+      color: green;
+      margin-bottom: 10px;
+      font-size: 25px;
+    }
+    p {
+      font-size: 15px;
+      color: #1e2329;
+    }
+  }
+}

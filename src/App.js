@@ -13,6 +13,7 @@ import Login from "./pages/Login";
 import Register from "./pages/Register";
 import Dashboard from "./pages/dashboard/Dashboard";
 import OrderedProduct from "./pages/dashboard/OrderedProduct";
+import Checkout from "./pages/Checkout";
 
 const App = () => {
   const [_, dispatch] = useDataLayer();
@@ -42,6 +43,9 @@ const App = () => {
         </Switch>
         <Switch>
           <Route path="/admin/ordered-items" exact component={OrderedProduct} />
+        </Switch>
+        <Switch>
+          <Route path="/checkout" component={Checkout} />
         </Switch>
         <Switch>
           <Route path="/login" component={Login} />

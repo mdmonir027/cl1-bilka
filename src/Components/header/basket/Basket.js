@@ -10,6 +10,8 @@ const Basket = () => {
   const [{ cart }] = useDataLayer();
   const [drawer, setDrawer] = useState(false);
 
+  const drawerClose = () => setDrawer(false);
+
   return (
     <li className="basket__icon navList__item">
       <div
@@ -25,7 +27,7 @@ const Basket = () => {
           onClick={() => setDrawer(false)}
           className="basket__backButton"
         />
-        <BasketProuducts />
+        <BasketProuducts drawerClose={drawerClose} />
       </Drawer>
     </li>
   );

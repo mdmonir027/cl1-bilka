@@ -65,6 +65,12 @@ const reducer = (state, action) => {
         auth,
       };
     }
+    case actions.CHECKOUT_PRODUCTS: {
+      return {
+        ...state,
+        cart: [],
+      };
+    }
     default:
       return state;
   }

@@ -32,7 +32,7 @@ const OrderedProduct = () => {
       <DashboardBanner title="Ordered Item" />
       <DashboardTopBar />
       <div className="ordertItems">
-        <table className="ordertItems__table">
+        <table className="table">
           <thead>
             <tr>
               <th>No.</th>

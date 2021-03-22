@@ -3,9 +3,16 @@ import BasketProduct from "./BasketProduct";
 import "./style/BasketProducts.scss";
 import { useDataLayer } from "./../../../store/dataLayer";
 import { totalPrice } from "./../../../utils/mathUtils";
+import { useHistory } from "react-router-dom";
 
-const BasketProuducts = () => {
+const BasketProuducts = ({ drawerClose }) => {
   const [{ cart }] = useDataLayer();
+  const history = useHistory();
+
+  const checkoutHandle = () => {
+    history.push("/checkout");
+    drawerClose();
+  };
 
   return (
     <>
@@ -28,7 +35,9 @@ const BasketProuducts = () => {
         ))}
       </div>
       {cart.length > 0 && (
-        <button className="basket__checkoutBtn">Checkout Now</button>
+        <button onClick={checkoutHandle} className="basket__checkoutBtn">
+          Checkout Now
+        </button>
       )}
     </>
   );

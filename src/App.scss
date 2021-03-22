@@ -14,6 +14,17 @@ $avatarWidth: 30px;
 }
 
 .form {
+  &__groupy {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__groupy &__group {
+    flex: 0 0 48%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
   &__group {
     margin-top: 25px;
     margin-bottom: 25px;
@@ -106,4 +117,44 @@ $avatarWidth: 30px;
 .avatar {
   width: $avatarWidth !important;
   height: $avatarWidth !important;
+}
+
+@mixin tdTh {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+.table {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+
+  td {
+    @include tdTh();
+    color: #1e2329;
+  }
+
+  &__stripe {
+    tr {
+      &:nth-child(even) {
+        background-color: #f2f2f2;
+      }
+    }
+  }
+
+  tr {
+    &:hover {
+      background-color: #ddd;
+      cursor: pointer;
+    }
+  }
+
+  th {
+    @include tdTh();
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: #00aeef;
+    color: white;
+  }
 }
