@@ -2,7 +2,7 @@
 
 **Bilka**: [Live Preview][preview] or visit this `https://cl1-bilka.web.app/`
 
-- Tasks
+- Proejct Setup
   - Clone the repo
   - Run command `yarn install` or `npm install`
   - Rename `.env.example` file to `.env`
