@@ -4,10 +4,10 @@
 
 - Tasks
   - Clone the repo
-  - run command `yarn install` or `npm install`
-  - rename `.env.example` file to `.env`
-  - set environment variables which will be your **admin** panel password
-  - run `yarn start` or `npm run`
+  - Run command `yarn install` or `npm install`
+  - Rename `.env.example` file to `.env`
+  - Set environment variables.
+  - Run `yarn start` or `npm run`
 
 ## Developed By
 
