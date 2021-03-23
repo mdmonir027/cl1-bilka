@@ -1,6 +1,6 @@
 # CL1-BILKA
 
-**Bilka**: [Live Preview][website] or visit this `https://cl1-bilka.web.app/`
+**Bilka**: [Live Preview][preview] or visit this `https://cl1-bilka.web.app/`
 
 - Tasks
   - Clone the repo
@@ -24,4 +24,4 @@ Email: mmislam027@gmail.com
 [github]: https://github.com/mdmonir027
 [linkedin]: https://www.linkedin.com/in/mdmonir027
 [facebook]: https://www.facebook.com/mdmoni027/
-[website]: https://cl1-bilka.web.app/
+[preview]: https://cl1-bilka.web.app/
