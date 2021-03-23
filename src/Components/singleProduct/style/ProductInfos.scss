@@ -89,3 +89,29 @@ $greenColor2: #16c272d9;
     }
   }
 }
+
+@media only screen and (max-width: 460px) {
+  .productInfos {
+    &__title {
+      font-size: 22px;
+    }
+
+    &__price {
+      font-size: 22px;
+    }
+
+    &__input {
+      padding: 5px 10px;
+      font-size: 15px;
+    }
+
+    &__icon {
+      font-size: 17px !important;
+    }
+
+    &__button {
+      padding: 12px 0;
+      font-size: 14px;
+    }
+  }
+}

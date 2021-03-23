@@ -10,7 +10,7 @@ $primaryColor: #00aeef;
 
   justify-content: space-between;
   align-items: center;
-  &__totalPrice {
+  _totalPrice {
     color: $primaryColor;
   }
   &__checkoutBtn {
@@ -77,5 +77,35 @@ $primaryColor: #00aeef;
     &:hover {
       cursor: pointer;
     }
+  }
+}
+
+@media only screen and (max-width: 460px) {
+  .basket {
+    &__icon {
+      display: none !important;
+    }
+
+    &__drawer .MuiDrawer-paper {
+      width: 100%;
+    }
+    &__checkoutBtn {
+      padding: 13px 0;
+      font-size: 18px;
+    }
+  }
+}
+.basket__mobileIcon {
+  display: none;
+  margin-top: 5px;
+  cursor: pointer;
+  &Icon {
+    font-size: 22px !important;
+  }
+}
+
+@media only screen and (max-width: 460px) {
+  .basket__mobileIcon {
+    display: block;
   }
 }

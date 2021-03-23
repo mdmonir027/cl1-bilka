@@ -15,3 +15,16 @@
     font-size: 17px;
   }
 }
+
+@media only screen and (max-width: 460px) {
+  .homeCard {
+    margin-bottom: 25px;
+    text-align: center;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    &__body {
+      text-align: left;
+    }
+  }
+}

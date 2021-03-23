@@ -39,3 +39,16 @@ $primaryBlack: #1e2329;
     text-transform: capitalize;
   }
 }
+
+@media only screen and (max-width: 460px) {
+  .footerList {
+    width: 100%;
+    margin-bottom: 30px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    &__title {
+      margin-bottom: 15px;
+    }
+  }
+}

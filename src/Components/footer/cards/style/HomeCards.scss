@@ -7,3 +7,9 @@
   flex-wrap: wrap;
   justify-content: space-around;
 }
+
+@media only screen and (max-width: 460px) {
+  .homeCards {
+    padding-top: 0;
+  }
+}

@@ -26,3 +26,15 @@
     box-sizing: border-box;
   }
 }
+
+@media only screen and (max-width: 460px) {
+  .hero {
+    &__infos {
+      width: 95%;
+    }
+
+    &__cards {
+      display: none;
+    }
+  }
+}

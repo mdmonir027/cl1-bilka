@@ -20,3 +20,16 @@
     letter-spacing: 3px;
   }
 }
+
+@media only screen and (max-width: 460px) {
+  .dashboardBanner {
+    height: 150px;
+    &__title {
+      font-size: 22px;
+    }
+
+    img {
+      object-fit: fill;
+    }
+  }
+}

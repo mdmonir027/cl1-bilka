@@ -13,3 +13,15 @@
     }
   }
 }
+
+@media only screen and (max-width: 460px) {
+  .logoLink {
+    &__menuIcon {
+      display: none;
+    }
+    &__logo {
+      width: 70px;
+      margin-left: 0;
+    }
+  }
+}

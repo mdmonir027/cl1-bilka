@@ -13,23 +13,34 @@ const Basket = () => {
   const drawerClose = () => setDrawer(false);
 
   return (
-    <li className="basket__icon navList__item">
-      <div
-        to="basket"
-        className="navList__link basket__link"
-        onClick={() => setDrawer(true)}
+    <>
+      <li className="basket__icon navList__item">
+        <div
+          to="basket"
+          className="navList__link basket__link"
+          onClick={() => setDrawer(true)}
+        >
+          <ShoppingCartIcon className="basket__iconIcon" />
+          Basket <span>{cart.length}</span>
+        </div>
+      </li>
+      <li className="basket__mobileIcon" onClick={() => setDrawer(true)}>
+        <ShoppingCartIcon className="basket__mobileIconIcon" />
+      </li>
+
+      <Drawer
+        anchor="right"
+        open={drawer}
+        onClose={() => setDrawer(false)}
+        className="basket__drawer"
       >
-        <ShoppingCartIcon className="basket__iconIcon" />
-        Basket <span>{cart.length}</span>
-      </div>
-      <Drawer anchor="right" open={drawer} onClose={() => setDrawer(false)}>
         <ArrowBackIcon
           onClick={() => setDrawer(false)}
           className="basket__backButton"
         />
         <BasketProuducts drawerClose={drawerClose} />
       </Drawer>
-    </li>
+    </>
   );
 };
 

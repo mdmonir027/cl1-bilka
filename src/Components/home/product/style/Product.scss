@@ -61,3 +61,21 @@ $primaryColor: #00aeef;
     }
   }
 }
+
+@media only screen and (max-width: 460px) {
+  .home__product {
+    width: 320px;
+    margin-bottom: 30px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    .product {
+      &__image {
+        height: 260px;
+      }
+      &__info {
+        height: 60px !important;
+      }
+    }
+  }
+}

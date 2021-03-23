@@ -40,11 +40,13 @@ $primaryColor: #00aeef;
     padding: 20px 60px;
     display: flex;
     justify-content: space-between;
-    // align-items: center;
+    flex-wrap: wrap;
   }
 
   &__offerContent {
     padding-top: 40px;
+    flex: 0 0 50%;
+    max-width: 50%;
 
     .offerContent {
       &__title {
@@ -56,7 +58,6 @@ $primaryColor: #00aeef;
       &__subTitle {
         color: $secondarColor;
         font-size: 23px;
-        width: 580px;
         margin-bottom: 13px;
       }
       &__link {
@@ -78,6 +79,8 @@ $primaryColor: #00aeef;
   }
 
   &__offerImage {
+    flex: 0 0 50%;
+    max-width: 50%;
     &Wrapper {
       margin-top: 80px;
       height: 350px;
@@ -86,6 +89,26 @@ $primaryColor: #00aeef;
         height: 100%;
         object-fit: contain;
       }
+    }
+  }
+}
+
+@media only screen and (max-width: 460px) {
+  .home {
+    margin: 0;
+    &__offerNews {
+      // flex-wrap: wrap;
+      padding: 20px;
+      text-align: center;
+    }
+    &__offerContent,
+    &__offerImage {
+      flex: 0 0 100% !important;
+      max-width: 100% !important;
+    }
+
+    &__categories {
+      padding-top: 30px;
     }
   }
 }
