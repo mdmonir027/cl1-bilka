@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import { Link, useHistory } from "react-router-dom";
 import { SET_USER } from "../../store/actions";
 import { useDataLayer } from "./../../store/dataLayer";
@@ -8,10 +8,17 @@ const LoginForm = () => {
   const [password, setPassword] = useState("");
   const [passwordShow, setPasswordShow] = useState(false);
   const [errors, setErrors] = useState({});
+  const loginEmailRef = useRef(null);
 
   const history = useHistory();
 
   const [_, dispatch] = useDataLayer();
+
+  // useEffects
+
+  useEffect(() => loginEmailRef.current.focus(), []);
+
+  // functions
 
   const submitHandler = (event) => {
     event.preventDefault();
@@ -65,6 +72,7 @@ const LoginForm = () => {
           Email
         </label>
         <input
+          ref={loginEmailRef}
           type="email"
           id="email"
           placeholder="Enter email address"
