@@ -4,7 +4,7 @@ import DashboardBanner from "./../../Components/dashboard/dashboard/DashboardBan
 import "./style/OredetProducts.scss";
 
 const OrderedProduct = () => {
-  const [items, setItems] = React.useState([
+  const items = [
     {
       id: 1,
       title: "product title",
@@ -26,7 +26,7 @@ const OrderedProduct = () => {
       price: 200,
       orderedAt: new Date(),
     },
-  ]);
+  ];
   return (
     <div className="dashboard">
       <DashboardBanner title="Ordered Item" />

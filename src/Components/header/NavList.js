@@ -1,6 +1,5 @@
 import React from "react";
 import NavListItem from "./NavListItem";
-import shortId from "shortid";
 import Basket from "./basket/Basket";
 import "./style/NavList.scss";
 import { useDataLayer } from "./../../store/dataLayer";

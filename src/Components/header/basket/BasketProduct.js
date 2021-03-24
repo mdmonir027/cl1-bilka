@@ -20,7 +20,7 @@ const BasketProduct = ({
   quantity,
   totalPrice,
 }) => {
-  const [_, dispatch] = useDataLayer();
+  const dispatch = useDataLayer().dispatch;
 
   const removeFromCart = () => {
     dispatch({

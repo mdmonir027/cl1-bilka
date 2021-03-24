@@ -9,7 +9,7 @@ import { useDataLayer } from "./../../../store/dataLayer";
 import { ADD_TO_CART } from "../../../store/actions";
 
 const Product = ({ title, image, id, subTitle, price }) => {
-  const [_, dispatch] = useDataLayer();
+  const dispatch = useDataLayer().dispatch;
   const addCart = () => {
     dispatch({
       type: ADD_TO_CART,

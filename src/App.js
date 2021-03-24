@@ -16,7 +16,7 @@ import OrderedProduct from "./pages/dashboard/OrderedProduct";
 import Checkout from "./pages/Checkout";
 
 const App = () => {
-  const [_, dispatch] = useDataLayer();
+  const dispatch = useDataLayer().dispatch;
 
   // useEffect
   useEffect(() => {

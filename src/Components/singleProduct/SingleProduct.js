@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { useDataLayer } from "../../store/dataLayer";
 import "./style/SingleProduct.scss";
-import CircularProgress from "@material-ui/core/CircularProgress";
 import ProductImage from "./ProductImage";
 import ProductInfos from "./ProductInfos";
 import Specification from "./Specification";
@@ -10,13 +9,12 @@ import Specification from "./Specification";
 const SingleProduct = () => {
   const { id } = useParams();
   const [product, setProduct] = useState({});
-  const [loading, setLoading] = useState(true);
+
   const [state] = useDataLayer();
 
   useEffect(() => {
     const allProducts = [...state.products];
     setProduct(allProducts.find((p) => p.id === parseInt(id)));
-    setLoading(false);
   }, [state, id]);
 
   return (
