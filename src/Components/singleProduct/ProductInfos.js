@@ -9,7 +9,7 @@ import { ADD_TO_CART } from "./../../store/actions";
 
 const ProductInfos = ({ title, subTitle, descriptions, price, id }) => {
   const [quantity, setQuantity] = useState(1);
-  const dispatch = useDataLayer().dispatch;
+  const dispatch = useDataLayer()[1];
 
   const increase = (e) => {
     const value = quantity + 1;

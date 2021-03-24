@@ -12,7 +12,7 @@ const LoginForm = () => {
 
   const history = useHistory();
 
-  const dispatch = useDataLayer().dispatch;
+  const dispatch = useDataLayer()[1];
 
   // useEffects
 
